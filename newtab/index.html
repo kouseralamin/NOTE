@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>New Tab</title>
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=" />
+</head>
+
+<body>
+
+    <div>
+        <textarea spellcheck="false"></textarea>
+    </div>
+
+    <style>
+        * {
+            background-color: black;
+            color: white;
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+            outline: none;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            font-family: monospace;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        *::-moz-selection {
+            color: black;
+            background: white;
+        }
+
+        *::selection {
+            color: black;
+            background: white;
+        }
+
+        body>div {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body>div>textarea {
+            box-sizing: border-box;
+            height: 100vh;
+            min-height: 1em;
+            resize: none;
+        }
+    </style>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
